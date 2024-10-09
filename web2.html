@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOM</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Poppins;
+        }
+        /* HEADER */
+        .header {
+            width: 100%;
+            background-color: #595a54;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            color: white;
+            margin-left: 10%;
+        }
+        .navbar {
+            margin-right: 10%;
+            color: white;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+        .navbar ul li:not(:first-child){
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* CONTAINER CONTENT */
+        .container-content {
+            max-width: 100%;
+            height: 500px;
+            background-color: #d5d4d2;
+        }
+        .content {
+            float: left;
+            width: 40%;
+            margin-left: 10%;
+        }
+        .content_1 a {
+            font-size: 16px;
+            color: white;
+            padding: 5px 20px;
+            background-color: orange;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .category {
+            float: right;
+            width: 50%;
+        }
+        .category img {
+            width: 80%;
+            height: 250px;
+            object-fit: cover; 
+        }
+
+        /* CONTAINER FOOD */
+        .container-food {
+            margin-left: 10%;
+        }
+        .container-content-food {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .content-food-1 {
+            max-width: 28%;
+            margin-top: 20px;
+            
+        }
+        .content-food-1 img {
+            width: 340px;
+            height: 250px;
+            object-fit: cover; 
+            margin-bottom: 10px;
+        }
+        .content-food-1 h4 {
+            margin-bottom: 10px;
+        }
+        .content-food-1 p{
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .content-food-1 a {
+            font-size: 16px;
+            color: white;
+            padding: 5px 30px;
+            background-color: orange;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 80px;
+        }
+        .container-content-food:last-child {
+            margin-right: 10%;
+        }
+
+        /* FOOTER */
+        .footer {
+            max-width: 100%;
+            height: 350px;
+            background-color: #6d6a6a;
+            color: white;
+        }
+        .footer-container {
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lastest-post,
+        .about,
+        .contact {
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        .lastest-post h3 {
+            margin-bottom: 30px;
+        }
+        .date {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .date-description {
+            margin-left: 10px;
+        }
+        .date-description p {
+            font-size: 12px;
+        }
+        .date-container {
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+        }
+        .date-container h4 {
+            margin-top: 7px;
+        }
+        .date-container h4,
+        .date-container p {
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        .about {
+            max-width: 33%;
+        }
+
+        .about h3 {
+            margin-bottom: 30px;
+        }
+
+        .contact {
+            max-width: 33%;
+            margin-right: 10%;
+        }
+        .contact-1 {
+            display: flex;
+            align-items: center;
+        }
+        .contact-1 img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+            object-fit: cover; 
+        }
+
+        .contact h3 {
+            margin-bottom: 30px;
+        }
+
+      
+        .margin-top {
+            margin-top: 80px;
+        }
+
+        /* TRANSISI*/
+        .navbar ul li a:hover{
+            color: black;
+            transition: 0.5s ease;
+        }
+
+        .content a:hover {
+            background-color: #595a54;
+            transition: 0.2s ease;
+        }
+
+        .content-food-1 img:hover{
+            transition: 0.5s ease;
+            transform: scale(1.5);
+        }
+
+        .content-food-1 a:hover{
+             color:white;
+             background-color:#595a54;
+             transition: 0.5s ease;
+        }
+
+        .date{
+            cursor: pointer;
+        }
+
+        .date:hover .date-container {
+            background-color: orange;
+        }
+
+        .date:hover .date-container h4, .date:hover .date-container p {
+            color: white;
+        }
+/* 
+        img{
+            transition: transform 0.3s ease;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+        } */
+        
+        .card{
+            overflow: hidden ;
+        }
+       
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Bloom</h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Contact </a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container-content">
+            <div class="content margin-top">
+                <div class="content_1">
+                    <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="category margin-top">
+                <img src="food.jpg" alt="makanan">
+            </div>
+        </div>
+
+        <div class="container-food">
+            <div class="heading margin-top">
+                <h2>This is a Heading</h2>
+            </div>
+            <div class="container-content-food">
+                <div class="content-food-1">
+                    <div class="card">
+                        <img src="food2.jpg" alt="hitam">
+                    </div>
+                    <h4>Vestibulum sed gravida</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium mi in dui lobortis interdum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="content-food-1">
+                    <div class="card">
+                        <img src="food3.jpg" alt="hitam">
+                    </div>
+                    <h4>Vestibulum sed gravida</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium mi in dui lobortis interdum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="content-food-1">
+                    <div class="card">
+                        <img src="food4.jpg" alt="hitam">
+                    </div>
+                    <h4>Vestibulum sed gravida</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium mi in dui lobortis interdum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="lastest-post">
+                    <h3>Lastest Post</h3>
+                    <div class="date">
+                        <div class="date-container">
+                            <h4>July</h4>
+                            <p>27</p>
+                        </div>
+                        <div class="date-description">
+                            <h4>Consectetur adipiscing</h4>
+                            <p>Sed pretium mi in dui lobortis</p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="date-container">
+                            <h4>July</h4>
+                            <p>27</p>
+                        </div>
+                        <div class="date-description">
+                            <h4>Consectetur adipiscing</h4>
+                            <p>Sed pretium mi in dui lobortis</p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="date-container">
+                            <h4>July</h4>
+                            <p>27</p>
+                        </div>
+                        <div class="date-description">
+                            <h4>Consectetur adipiscing</h4>
+                            <p>Sed pretium mi in dui lobortis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium mi in dui lobortis interdum. Suspendisse non orci ullamcorper, egestas mauris sed, aliquam ipsum.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-1">
+                        <i class="fab fa-facebook" style="font-size: 30px; margin-right: 10px;"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="contact-1">
+                        <i class="fab fa-twitter" style="font-size: 30px; margin-right: 10px;"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="contact-1">
+                        <i class="fab fa-google" style="font-size: 30px; margin-right: 10px;"></i>
+                        <p>Goggle</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
